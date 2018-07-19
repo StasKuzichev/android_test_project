@@ -1,0 +1,4 @@
+class Sambaka{
+pablic static void main(String[]  args){
+system.out.print("Hello");
+}}
