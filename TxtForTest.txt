@@ -1,0 +1,5 @@
+class Test(){
+	int test_method(){
+		return 2;
+	}
+}
