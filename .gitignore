@@ -63,8 +63,6 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
-<<<<<<< HEAD
 NotForRepository.txt
-=======
 db.config.json
->>>>>>> master
+TxtForTest.txt
