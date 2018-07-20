@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Android GIT Test</string>
-    <string name="inputView">https://</string>
+    <string name="inputView">https://www.google.com</string>
     <string name="btnOk">OK</string>
+    <string name="format">Incorrect format.Use this format:https://www.google.com</string>
     <string name="Text">Enter your link here:</string>
     <string name="error">Please fill any fields</string>
 </resources>

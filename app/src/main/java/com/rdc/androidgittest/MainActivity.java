@@ -53,21 +53,25 @@ public class MainActivity extends AppCompatActivity
                         sendIntent.setType("text/plain");
                         startActivity(sendIntent);
                         inputLink.setText("");
-                    } else //2.если ссылка введена без  https://
+                    }
+                    else
+                        if(!href.contains("https://")||!href.contains("http://"))//2.если ссылка введена без  https://
                         {
-                        Intent sendIntent2 = new Intent();
+                            Toast.makeText(MainActivity.this, R.string.format, Toast.LENGTH_LONG).show();
+                            inputLink.setText("");
+                        /*Intent sendIntent2 = new Intent();
                         sendIntent2.setAction(Intent.ACTION_SEND);
                         sendIntent2.putExtra(Intent.EXTRA_TEXT, "https://" + href);//добавляем https:// и передаем
                         sendIntent2.setType("text/plain");
                         startActivity(sendIntent2);
-                        inputLink.setText("");
+                        inputLink.setText("");*/
                         }
 
                 }
 
                 else if(href.contains(" "))//если ссылка введена с пробелами
                     {
-                        Toast.makeText(MainActivity.this, R.string.error, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, R.string.format, Toast.LENGTH_LONG).show();
                         inputLink.setText("");
                     }
 
