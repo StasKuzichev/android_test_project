@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android GIT Test</string>
+    <string name="inputView">https://</string>
+    <string name="btnOk">OK</string>
+    <string name="Text">Enter your link here:</string>
+    <string name="error">Please fill any fields</string>
 </resources>
